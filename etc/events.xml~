@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_account_edited">
+        <observer name="customer_password_update" instance="Godogi\Forcenewpassword\Observer\PasswordUpdated" />
+    </event>
+    <event name="controller_action_predispatch">
+        <observer name="check_login_persistent" instance="Godogi\Forcenewpassword\Observer\CustomerLogin" />
+ 	</event>
+</config>
