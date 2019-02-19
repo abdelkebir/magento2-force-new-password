@@ -12,8 +12,6 @@ Forcing customers to update their passwords
 
 4. bin/magento setup:di:compile
 
-If using OpCache, please clear cache.
-
 
 ## Compatibility
 
